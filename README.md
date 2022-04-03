@@ -1,1 +1,1 @@
-# twitch.tv_ui_autotests
+# gmail_ui_autotests
