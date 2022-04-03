@@ -23,7 +23,12 @@ public class LoginPage {
             passwordInput = $("input[type='password']"),
             passwordInputNextButton = $("#passwordNext").$(byText("Далее")),
             loggedIcon = $("img[class='gb_Aa gbii']"),
-            loggedTooltip = $("body > div:nth-child(30)");
+//            loggedTooltip = $("body > div:nth-child(30)");
+            loggedTooltip = $x("//div[text() = 'John Smith']");
+
+    // body > div.gb_Qe
+    // body > div.gb_Qe > div > div:nth-child(3)
+    // /html/body/div[17]/div/div[2]
 
     @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
     public LoginPage openPage() {
@@ -76,7 +81,8 @@ public class LoginPage {
     @Step("Проверяем логин")
     public LoginPage loggedCheck() {
         loggedIcon.hover();
-        loggedTooltip.shouldHave(text("John Smith"));
+//        loggedTooltip.shouldHave(text("John Smith"));
+        loggedTooltip.should(exist);
         return this;
     }
 

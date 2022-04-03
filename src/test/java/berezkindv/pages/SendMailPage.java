@@ -8,9 +8,11 @@ import org.aeonbits.owner.ConfigFactory;
 
 import static berezkindv.data.TestData.testMailMessage;
 import static berezkindv.data.TestData.testMailSubject;
+import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 public class SendMailPage {
 
@@ -22,7 +24,9 @@ public class SendMailPage {
             toFieldInput = $("textarea[name='to']"),
             subjectFieldInput = $("input[name='subjectbox']"),
             textboxInput = $("div[aria-label='Текст письма']"),
-            sendMailButton = $("div[data-tooltip^='Отправить']");
+            sendMailButton = $("div[data-tooltip^='Отправить']"),
+            sentMailButton = $("div[data-tooltip='Отправленные']"),
+            sentMailCheck = $x("//span[@data-thread-id and text() ='" + testMailSubject + "']");
 
 
     @Step("Нажимаем кнопку 'Написать'")
@@ -60,6 +64,19 @@ public class SendMailPage {
         sendMailButton.click();
         return this;
     }
+
+    @Step("Переходим в 'Отправленные'")
+    public SendMailPage goToSentMailTab() {
+        sentMailButton.click();
+        return this;
+    }
+
+    @Step("Проверяем, что письмо отправлено")
+    public SendMailPage checkSentMail() {
+        sentMailCheck.should(exist);
+        return this;
+    }
+
 
     public SendMailPage sleep(int value) {
         Selenide.sleep(value);

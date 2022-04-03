@@ -55,6 +55,8 @@ public class Tests extends TestBase {
                 .typeSubjectField()
                 .typeTextbox()
                 .pushSendMailButton()
+                .goToSentMailTab()
+                .checkSentMail()
                 .sleep(5000);
 
     }
