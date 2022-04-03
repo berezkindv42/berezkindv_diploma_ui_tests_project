@@ -1,6 +1,7 @@
 package berezkindv.docs;
 
 import com.codeborne.selenide.*;
+import org.junit.jupiter.api.Disabled;
 import org.openqa.selenium.Keys;
 
 import java.io.File;
@@ -17,6 +18,10 @@ import static com.codeborne.selenide.Selenide.*;
     Selenide commands examples
     Author: https://github.com/vinogradoff
     this is not a full list, just the most common
+
+    id="datepicker-1918-2675-1" - вот есть у нас такой элемент.
+    [id^='datepicker'][id$='-1'] - вот так к нему можно подобрать селектор
+    т.е. символ ^ отвечает за "начинается с", а символ $ отвечает за "оканчивается на"
  */
 
 public class SelenideSnippets {
