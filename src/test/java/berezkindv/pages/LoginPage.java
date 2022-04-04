@@ -17,7 +17,7 @@ public class LoginPage {
 
     private static final SelenideElement loginButton = $(".header").$(byText("Войти")),
             languageChooseButton = $("#lang-chooser"),
-            languageSelect = $("div[data-value='ru']"),
+            languageSelect = $("div[data-value='en']"),
             loginFormCheck = $("div[id='view_container']").$(byText("Забыли адрес электронной почты?")),
             emailInput = $("#identifierId"),
             emailInputNextButton = $("#identifierNext").$(byText("Далее")),
@@ -48,7 +48,7 @@ public class LoginPage {
 
     @Step("Нажимаем кнопку выбора языка")
     public LoginPage selectRuLanguage() {
-        languageSelect.scrollIntoView("Русский").click();
+        languageSelect.click();
         return this;
     }
 

@@ -26,8 +26,8 @@ public class Tests extends TestBase {
     @DisplayName("Тест входа в gmail")
     void loginTest() {
         loginPage.openPage()
-                .pushLoginButton()
-                .pushLanguageChooseButton()
+//                .pushLoginButton()
+//                .pushLanguageChooseButton()
                 .selectRuLanguage()
                 .checkLoginForm()
                 .typeEmail()
