@@ -27,8 +27,8 @@ public class Tests extends TestBase {
     void loginTest() {
         loginPage.openPage()
                 .pushLoginButton()
-                .pushLanguageChooseButton()
-                .selectRuLanguage()
+//                .pushLanguageChooseButton()
+//                .selectRuLanguage()
                 .checkLoginForm()
                 .typeEmail()
                 .pushEmailNextButton()
@@ -47,8 +47,6 @@ public class Tests extends TestBase {
     void sendMailTest() {
         loginPage.openPage()
                 .pushLoginButton()
-                .pushLanguageChooseButton()
-                .selectRuLanguage()
                 .typeEmail()
                 .pushEmailNextButton()
                 .typePassword()

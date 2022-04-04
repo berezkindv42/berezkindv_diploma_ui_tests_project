@@ -17,7 +17,7 @@ public class LoginPage {
 
     private static final SelenideElement loginButton = $(".header").$(byText("Войти")),
             languageChooseButton = $("#lang-chooser"),
-            languageSelect = $("div[data-value='ru']"),
+            languageSelect = $("div[data-value='ru']").$(byText("Русский")),
             loginFormCheck = $("div[id='view_container']").$(byText("Забыли адрес электронной почты?")),
             emailInput = $("#identifierId"),
             emailInputNextButton = $("#identifierNext").$(byText("Далее")),
@@ -27,6 +27,7 @@ public class LoginPage {
             loggedIcon = $("img[class='gb_Aa gbii']"),
             loggedTooltip = $x("//div[text() = 'John Smith']");
 
+    // #lang-chooser > div.OA0qNb.ncFHed > div:nth-child(4) > span
     //            loginFormCheck = $x("//button[text() = 'Забыли адрес электронной почты?']"),
     //            passwordFormCheck = $x("//button[text() = 'Забыли пароль?']"),
 
