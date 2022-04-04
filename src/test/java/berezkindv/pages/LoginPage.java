@@ -17,7 +17,7 @@ public class LoginPage {
 
     private static final SelenideElement loginButton = $(".header").$(byText("Войти")),
             languageChooseButton = $("#lang-chooser"),
-            languageSelect = $("div[data-value='ru']").$(byText("Русский")),
+            languageSelect = $("div[data-value='ru']"),
             loginFormCheck = $("div[id='view_container']").$(byText("Забыли адрес электронной почты?")),
             emailInput = $("#identifierId"),
             emailInputNextButton = $("#identifierNext").$(byText("Далее")),
@@ -27,9 +27,6 @@ public class LoginPage {
             loggedIcon = $("img[class='gb_Aa gbii']"),
             loggedTooltip = $x("//div[text() = 'John Smith']");
 
-    // #lang-chooser > div.OA0qNb.ncFHed > div:nth-child(4) > span
-    //            loginFormCheck = $x("//button[text() = 'Забыли адрес электронной почты?']"),
-    //            passwordFormCheck = $x("//button[text() = 'Забыли пароль?']"),
 
     @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
     public LoginPage openPage() {
@@ -51,7 +48,7 @@ public class LoginPage {
 
     @Step("Нажимаем кнопку выбора языка")
     public LoginPage selectRuLanguage() {
-        languageSelect.scrollTo().click();
+        languageSelect.click();
         return this;
     }
 
