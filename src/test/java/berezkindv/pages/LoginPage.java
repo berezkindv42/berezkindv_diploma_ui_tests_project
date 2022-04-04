@@ -16,10 +16,10 @@ public class LoginPage {
     CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
     private static final SelenideElement loginButton = $(".header").$(byText("Войти")),
-            loginFormCheck = $("#view_container").$(byText("Забыли адрес электронной почты?")),
+            loginFormCheck = $("div[id='view_container']").$(byText("Забыли адрес электронной почты?")),
             emailInput = $("#identifierId"),
             emailInputNextButton = $("#identifierNext").$(byText("Далее")),
-            passwordFormCheck = $("#view_container").$(byText("Забыли пароль?")),
+            passwordFormCheck = $("div[id='view_container']").$(byText("Забыли пароль?")),
             passwordInput = $("input[type='password']"),
             passwordInputNextButton = $("#passwordNext").$(byText("Далее")),
             loggedIcon = $("img[class='gb_Aa gbii']"),
