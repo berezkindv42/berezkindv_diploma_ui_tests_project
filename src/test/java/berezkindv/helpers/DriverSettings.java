@@ -23,10 +23,10 @@ public class DriverSettings {
         chromeOptions.addArguments("--disable-infobars");
         chromeOptions.addArguments("--disable-popup-blocking");
         chromeOptions.addArguments("--disable-notifications");
-//        chromeOptions.addArguments("--lang=en-en");
-        HashMap<String, String> settings = new HashMap<String, String>();
-        settings.put("intl.accept_languages", "en-US");
-        chromeOptions.setExperimentalOption("prefs", settings);
+        chromeOptions.addArguments("--lang=en-en");
+//        HashMap<String, String> settings = new HashMap<String, String>();
+//        settings.put("intl.accept_languages", "en-US");
+//        chromeOptions.setExperimentalOption("prefs", settings);
 //        chromeOptions.addArguments("intl.accept_languages", "ru-RU");
 
         if (Project.isWebMobile()) { // for chrome only
