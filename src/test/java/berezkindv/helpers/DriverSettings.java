@@ -19,14 +19,15 @@ public class DriverSettings {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
 
-        HashMap<String, String> settings = new HashMap<String, String>();
-        settings.put("intl.accept_languages", "en-US");
-        chromeOptions.setExperimentalOption("prefs", settings);
+//        HashMap<String, String> settings = new HashMap<String, String>();
+//        settings.put("intl.accept_languages", "en-US");
+//        chromeOptions.setExperimentalOption("prefs", settings);
 
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--disable-infobars");
         chromeOptions.addArguments("--disable-popup-blocking");
         chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.addArguments("--lang=ru");
 //        chromeOptions.addArguments("--lang=en-en");
 
 //        chromeOptions.addPreference("intl.accept_languages", "en-US");
