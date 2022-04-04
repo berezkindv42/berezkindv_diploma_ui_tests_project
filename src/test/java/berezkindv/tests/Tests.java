@@ -27,6 +27,8 @@ public class Tests extends TestBase {
     void loginTest() {
         loginPage.openPage()
                 .pushLoginButton()
+                .pushLanguageChooseButton()
+                .selectRuLanguage()
                 .checkLoginForm()
                 .typeEmail()
                 .pushEmailNextButton()
