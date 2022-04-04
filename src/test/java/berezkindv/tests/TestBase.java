@@ -32,7 +32,7 @@ public class TestBase {
     }
 
     @BeforeEach
-    static void setUpIch() throws MalformedURLException {
+    void setUpIch() throws MalformedURLException {
         if (Project.config.remoteDriverUrl() == null) return;
         WebDriver driver = new RemoteWebDriver(new URL(Project.config.remoteDriverUrl()), Configuration.browserCapabilities);
         WebDriverRunner.setWebDriver(driver);
