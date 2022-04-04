@@ -16,19 +16,19 @@ public class LoginPage {
     CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
     private static final SelenideElement loginButton = $(".header").$(byText("Войти")),
-            loginFormCheck = $("#view_container").$(byText("Забыли адрес электронной почты?")),
+            languageChooseButton = $("#lang-chooser"),
+            languageSelect = $("div[data-value='ru']"),
+            loginFormCheck = $("div[id='view_container']").$(byText("Забыли адрес электронной почты?")),
             emailInput = $("#identifierId"),
             emailInputNextButton = $("#identifierNext").$(byText("Далее")),
-            passwordFormCheck = $("#view_container").$(byText("Забыли пароль?")),
+            passwordFormCheck = $("div[id='view_container']").$(byText("Забыли пароль?")),
             passwordInput = $("input[type='password']"),
             passwordInputNextButton = $("#passwordNext").$(byText("Далее")),
             loggedIcon = $("img[class='gb_Aa gbii']"),
-//            loggedTooltip = $("body > div:nth-child(30)");
             loggedTooltip = $x("//div[text() = 'John Smith']");
 
-    // body > div.gb_Qe
-    // body > div.gb_Qe > div > div:nth-child(3)
-    // /html/body/div[17]/div/div[2]
+    //            loginFormCheck = $x("//button[text() = 'Забыли адрес электронной почты?']"),
+    //            passwordFormCheck = $x("//button[text() = 'Забыли пароль?']"),
 
     @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
     public LoginPage openPage() {
@@ -39,6 +39,18 @@ public class LoginPage {
     @Step("Нажимаем кнопку 'Войти'")
     public LoginPage pushLoginButton() {
         loginButton.click();
+        return this;
+    }
+
+    @Step("Нажимаем кнопку выбора языка")
+    public LoginPage pushLanguageChooseButton() {
+        languageChooseButton.click();
+        return this;
+    }
+
+    @Step("Нажимаем кнопку выбора языка")
+    public LoginPage selectRuLanguage() {
+        languageSelect.scrollTo().click();
         return this;
     }
 
@@ -81,7 +93,6 @@ public class LoginPage {
     @Step("Проверяем логин")
     public LoginPage loggedCheck() {
         loggedIcon.hover();
-//        loggedTooltip.shouldHave(text("John Smith"));
         loggedTooltip.should(exist);
         return this;
     }

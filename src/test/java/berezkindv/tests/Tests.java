@@ -22,11 +22,13 @@ public class Tests extends TestBase {
     @Test
     @Tag("ui")
     @Owner("berezkindv")
-    @Description("UI тесты для платформы gmail")
-    @DisplayName("Gmail UI Tests")
+    @Description("Gmail login test")
+    @DisplayName("Тест входа в gmail")
     void loginTest() {
         loginPage.openPage()
                 .pushLoginButton()
+                .pushLanguageChooseButton()
+                .selectRuLanguage()
                 .checkLoginForm()
                 .typeEmail()
                 .pushEmailNextButton()
@@ -45,6 +47,8 @@ public class Tests extends TestBase {
     void sendMailTest() {
         loginPage.openPage()
                 .pushLoginButton()
+                .pushLanguageChooseButton()
+                .selectRuLanguage()
                 .typeEmail()
                 .pushEmailNextButton()
                 .typePassword()
