@@ -29,17 +29,17 @@ public class LoginPage {
             loggedTooltip = $x("//div[text() = 'John Smith']");
 
 
-//    @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
-//    public LoginPage openPage() {
-//        open(gmailPage);
-//        return this;
-//    }
-
     @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
     public LoginPage openPage() {
-        open(testGmailUrl);
+        open(gmailPage);
         return this;
     }
+
+//    @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
+//    public LoginPage openPage() {
+//        open(testGmailUrl);
+//        return this;
+//    }
 
     @Step("Нажимаем кнопку 'Войти'")
     public LoginPage pushLoginButton() {
