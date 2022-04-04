@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
 import org.aeonbits.owner.ConfigFactory;
 
 import static berezkindv.data.TestData.gmailPage;
+import static berezkindv.data.TestData.testGmailUrl;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -28,9 +29,15 @@ public class LoginPage {
             loggedTooltip = $x("//div[text() = 'John Smith']");
 
 
+//    @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
+//    public LoginPage openPage() {
+//        open(gmailPage);
+//        return this;
+//    }
+
     @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
     public LoginPage openPage() {
-        open(gmailPage);
+        open(testGmailUrl);
         return this;
     }
 
