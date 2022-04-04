@@ -48,7 +48,7 @@ public class LoginPage {
 
     @Step("Нажимаем кнопку выбора языка")
     public LoginPage selectRuLanguage() {
-        languageSelect.scrollIntoView(true).click();
+        languageSelect.scrollIntoView(false).click();
         return this;
     }
 
