@@ -27,7 +27,7 @@ public class DriverSettings {
         chromeOptions.addArguments("--disable-infobars");
         chromeOptions.addArguments("--disable-popup-blocking");
         chromeOptions.addArguments("--disable-notifications");
-        chromeOptions.addArguments("--lang=ru");
+        chromeOptions.addArguments("--lang=ru_RU");
 //        chromeOptions.addArguments("--lang=en-en");
 
 //        chromeOptions.addPreference("intl.accept_languages", "en-US");
