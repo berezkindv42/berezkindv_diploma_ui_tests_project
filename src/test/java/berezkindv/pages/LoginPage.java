@@ -15,9 +15,10 @@ public class LoginPage {
 
     CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
-    private static final SelenideElement loginButton = $(".header").$(byText("Войти")),
-            languageChooseButton = $("#lang-chooser"),
-            languageSelect = $("div[data-value='en']"),
+    private static final SelenideElement
+            loginButton = $(".header").$(byText("Войти")),
+//            languageChooseButton = $("#lang-chooser"),
+//            languageSelect = $("div[data-value='en']"),
             loginFormCheck = $("div[id='view_container']").$(byText("Забыли адрес электронной почты?")),
             emailInput = $("#identifierId"),
             emailInputNextButton = $("#identifierNext").$(byText("Далее")),
@@ -27,11 +28,11 @@ public class LoginPage {
             loggedIcon = $("img[class='gb_Aa gbii']"),
             loggedTooltip = $x("//div[text() = 'John Smith']");
 
-    @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
-    public LoginPage openPage() {
-        open(gmailPage);
-        return this;
-    }
+//    @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
+//    public LoginPage openPage() {
+//        open(gmailPage);
+//        return this;
+//    }
 
     @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
     public LoginPage openAccountPage() {
@@ -45,23 +46,23 @@ public class LoginPage {
 //        return this;
 //    }
 
-    @Step("Нажимаем кнопку 'Войти'")
-    public LoginPage pushLoginButton() {
-        loginButton.click();
-        return this;
-    }
-
-    @Step("Нажимаем кнопку выбора языка")
-    public LoginPage pushLanguageChooseButton() {
-        languageChooseButton.click();
-        return this;
-    }
-
-    @Step("Нажимаем кнопку выбора языка")
-    public LoginPage selectRuLanguage() {
-        languageSelect.click();
-        return this;
-    }
+//    @Step("Нажимаем кнопку 'Войти'")
+//    public LoginPage pushLoginButton() {
+//        loginButton.click();
+//        return this;
+//    }
+//
+//    @Step("Нажимаем кнопку выбора языка")
+//    public LoginPage pushLanguageChooseButton() {
+//        languageChooseButton.click();
+//        return this;
+//    }
+//
+//    @Step("Нажимаем кнопку выбора языка")
+//    public LoginPage selectRuLanguage() {
+//        languageSelect.click();
+//        return this;
+//    }
 
     @Step("Проверяем открытие формы ввода электронной почты")
     public LoginPage checkLoginForm() {

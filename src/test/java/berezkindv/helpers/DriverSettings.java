@@ -30,8 +30,6 @@ public class DriverSettings {
         chromeOptions.addArguments("--lang=ru-ru");
 //        chromeOptions.addArguments("--lang=en-en");
 
-//        chromeOptions.addPreference("intl.accept_languages", "en-US");
-
         if (Project.isWebMobile()) { // for chrome only
             Map<String, Object> mobileDevice = new HashMap<>();
             mobileDevice.put("deviceName", Project.config.browserMobileView());

@@ -20,6 +20,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 
 @ExtendWith({AllureJunit5.class})
@@ -32,7 +33,12 @@ public class TestBase {
     }
 
 //    @BeforeEach
-//    void setUpIch() throws MalformedURLException {
+//    void setUpEach() {
+//        WebDriverRunner.getWebDriver().manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+//    }
+
+//    @BeforeEach
+//    void setUpEach() throws MalformedURLException {
 //        if (Project.config.remoteDriverUrl() == null) return;
 //        WebDriver driver = new RemoteWebDriver(new URL(Project.config.remoteDriverUrl()), Configuration.browserCapabilities);
 //        WebDriverRunner.setWebDriver(driver);
@@ -45,7 +51,6 @@ public class TestBase {
 
         AllureAttachments.addScreenshotAs("Last screenshot");
         AllureAttachments.addPageSource();
-//        AllureAttachments.attachNetwork(); // todo
         AllureAttachments.addBrowserConsoleLogs();
 
         Selenide.closeWebDriver();

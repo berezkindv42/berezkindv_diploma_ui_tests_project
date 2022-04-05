@@ -25,7 +25,8 @@ public class Tests extends TestBase {
     @Description("Gmail login test")
     @DisplayName("Тест входа в gmail")
     void loginTest() {
-        loginPage.openAccountPage()
+        loginPage
+                .openAccountPage()
 //                .openPage()
 //                .pushLoginButton()
 //                .pushLanguageChooseButton()
@@ -46,14 +47,17 @@ public class Tests extends TestBase {
     @Description("Send mail test")
     @DisplayName("Тест отправки почты")
     void sendMailTest() {
-        loginPage.openAccountPage()
+        loginPage
+                .openAccountPage()
 //                .openPage()
 //                .pushLoginButton()
                 .typeEmail()
                 .pushEmailNextButton()
                 .typePassword()
                 .pushPasswordNextButton();
-        sendMailPage.pushGmailAppButton()
+        sendMailPage
+                .openMailPage()
+                .pushLoginButton()
                 .pushNewMailButton()
                 .checkNewMailForm()
                 .typeToField()
@@ -62,7 +66,7 @@ public class Tests extends TestBase {
                 .pushSendMailButton()
                 .goToSentMailTab()
                 .checkSentMail()
-                .sleep(5000);
+                .sleep(10000);
 
     }
 
