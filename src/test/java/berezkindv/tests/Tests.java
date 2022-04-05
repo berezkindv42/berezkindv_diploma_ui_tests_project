@@ -58,6 +58,7 @@ public class Tests extends TestBase {
         sendMailPage
                 .openMailPage()
                 .pushLoginButton()
+                .selectAccount()
                 .pushNewMailButton()
                 .checkNewMailForm()
                 .typeToField()
@@ -66,7 +67,7 @@ public class Tests extends TestBase {
                 .pushSendMailButton()
                 .goToSentMailTab()
                 .checkSentMail()
-                .sleep(10000);
+                .sleep(5000);
 
     }
 

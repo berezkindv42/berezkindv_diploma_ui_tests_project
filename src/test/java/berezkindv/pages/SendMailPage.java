@@ -22,6 +22,7 @@ public class SendMailPage {
     private static final SelenideElement
             gmailAppButton = $("a[href='https://mail.google.com/mail/?tab=km']").parent(),
             loginButton = $(".header").$(byText("Войти")),
+            selectAccount = $x("//div[text() = 'John Smith']"),
             newMailButton = $("div[class='z0']").$(byText("Написать")),
             newMailFormCheck = $("div[class='AD']"),
             toFieldInput = $("textarea[name='to']"),
@@ -43,6 +44,14 @@ public class SendMailPage {
         loginButton.click();
         return this;
     }
+
+    @Step("Выбираем аккаунт")
+    public SendMailPage selectAccount() {
+        selectAccount.click();
+        return this;
+    }
+
+
 
     @Step("Нажимаем кнопку 'Написать'")
     public SendMailPage pushNewMailButton() {
