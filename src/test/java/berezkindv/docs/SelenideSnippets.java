@@ -22,6 +22,11 @@ import static com.codeborne.selenide.Selenide.*;
     id="datepicker-1918-2675-1" - вот есть у нас такой элемент.
     [id^='datepicker'][id$='-1'] - вот так к нему можно подобрать селектор
     т.е. символ ^ отвечает за "начинается с", а символ $ отвечает за "оканчивается на"
+
+    пауза в консоли девтулза
+    setTimeout(function() {
+    debugger;
+    }, 3000);
  */
 
 public class SelenideSnippets {

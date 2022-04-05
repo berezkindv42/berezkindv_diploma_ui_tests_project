@@ -19,7 +19,8 @@ public class SendMailPage {
     CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
 
-    private static final SelenideElement newMailButton = $("div[class='z0']").$(byText("Написать")),
+    private static final SelenideElement gmailAppButton = $("a[href='https://mail.google.com/mail/?tab=km']"),
+            newMailButton = $("div[class='z0']").$(byText("Написать")),
             newMailFormCheck = $("div[class='AD']"),
             toFieldInput = $("textarea[name='to']"),
             subjectFieldInput = $("input[name='subjectbox']"),
@@ -77,6 +78,11 @@ public class SendMailPage {
         return this;
     }
 
+    @Step("Нажимаем кнопку приложения 'Gmail'")
+    public SendMailPage pushGmailAppButton() {
+        gmailAppButton.click();
+        return this;
+    }
 
     public SendMailPage sleep(int value) {
         Selenide.sleep(value);
