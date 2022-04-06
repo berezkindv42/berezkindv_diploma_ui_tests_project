@@ -25,7 +25,7 @@ public class VerifyLogin extends TestBase {
         $("#identifierNext").$(byText("Далее")).click();
         $("input[type='password']").setValue(config.userPassword());
         $("#passwordNext").$(byText("Далее")).click();
-        $x("//div[text() = 'Другой способ']").click();
+        $(byText("Другой способ")).click();
         loginPage
                 .loggedCheck();
     }
