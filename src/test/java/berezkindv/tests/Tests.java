@@ -54,9 +54,9 @@ public class Tests extends TestBase {
                 .typePassword()
                 .pushPasswordNextButton();
         sendMailPage
-                .openMailPage()
-                .pushLoginButton()
-                .selectAccount()
+//                .openMailPage()
+//                .pushLoginButton()
+//                .selectAccount()
                 .pushNewMailButton()
                 .checkNewMailForm()
                 .typeToField()

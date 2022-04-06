@@ -23,12 +23,16 @@ public class SendMailPage {
             gmailAppButton = $("a[href='https://mail.google.com/mail/?tab=km']").parent(),
             loginButton = $(".header").$(byText("Войти")),
             selectAccount = $x("//div[text() = 'John Smith']"),
+//            newMailButton = $("div[class='z0']").$(byText("Написать")),
             newMailButton = $("div[class='z0']").$(byText("Написать")),
             newMailFormCheck = $("div[class='AD']"),
             toFieldInput = $("textarea[name='to']"),
             subjectFieldInput = $("input[name='subjectbox']"),
+//            textboxInput = $("div[aria-label='Текст письма']"),
             textboxInput = $("div[aria-label='Текст письма']"),
+//            sendMailButton = $("div[data-tooltip^='Отправить']"),
             sendMailButton = $("div[data-tooltip^='Отправить']"),
+//            sentMailButton = $("div[data-tooltip='Отправленные']"),
             sentMailButton = $("div[data-tooltip='Отправленные']"),
             sentMailCheck = $x("//span[@data-thread-id and text() ='" + testMailSubject + "']");
 
