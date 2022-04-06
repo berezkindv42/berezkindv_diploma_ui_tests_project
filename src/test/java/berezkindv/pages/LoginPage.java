@@ -38,11 +38,11 @@ public class LoginPage {
         return this;
     }
 
-//    @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
-//    public LoginPage openAccountPage() {
-//        open(gmailAccountPage);
-//        return this;
-//    }
+    @Step("Открываем страницу аккаунта")
+    public LoginPage openAccountPage() {
+        open(gmailAccountPage);
+        return this;
+    }
 
 //    @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
 //    public LoginPage openPage() {
