@@ -26,10 +26,9 @@ public class Tests extends TestBase {
     @DisplayName("Тест входа в gmail")
     void loginTest() {
         loginPage
-                .openAccountPage()
-//                .openPage()
-//                .pushLoginButton()
-//                .pushLanguageChooseButton()
+                .openPage()
+                .pushLoginButton()
+//                .pushLa1nguageChooseButton()
 //                .selectRuLanguage()
                 .checkLoginForm()
                 .typeEmail()
@@ -48,9 +47,8 @@ public class Tests extends TestBase {
     @DisplayName("Тест отправки почты")
     void sendMailTest() {
         loginPage
-                .openAccountPage()
-//                .openPage()
-//                .pushLoginButton()
+                .openPage()
+                .pushLoginButton()
                 .typeEmail()
                 .pushEmailNextButton()
                 .typePassword()
