@@ -26,6 +26,8 @@ public class VerifyLogin extends TestBase {
         $("input[type='password']").setValue(config.userPassword());
         $("#passwordNext").$(byText("Далее")).click();
         $(byText("Подтвердите резервный адрес электронной почты")).click();
+        $("#knowledge-preregistered-email-response").setValue(config.toEmail());
+        $(byText("Далее")).click();
         loginPage
                 .loggedCheck();
     }
