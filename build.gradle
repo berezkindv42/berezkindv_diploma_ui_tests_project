@@ -70,9 +70,3 @@ task ui_tests(type: Test) {
         includeTags 'ui', 'verify'
     }
 }
-
-task verify_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags 'verify'
-    }
-}
