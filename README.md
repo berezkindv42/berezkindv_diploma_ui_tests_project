@@ -39,7 +39,7 @@
 - ✓ Ручной тест удаления письма (Добавлен в Allure TestOps).
 
 ## <img src="images/logos/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
-###<a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_diploma_ui_tests_project/">Сборка в Jenkins</a>
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_diploma_ui_tests_project/">Сборка в Jenkins</a>
 
 Для запуска сборки нужно нажат кнопку "Собрать с параметрами":
 <p align="center">
