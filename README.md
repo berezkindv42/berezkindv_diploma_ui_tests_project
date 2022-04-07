@@ -133,5 +133,5 @@ ${TASK}
 ### <img src="images/logos/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Примеры видео о прохождении тестов
 
 <p align="center">
-<img title="Selenoid Video" src="images/screenshots/video_logintest.gif" width="250" height="153"  alt="video"> <img title="Selenoid Video" src="images/screenshots/video_sendmaultest.gif" width="250" height="153"  alt="video"> <img title="Selenoid Video" src="images/screenshots/video_titletest.gif" width="250" height="153"  alt="video">
+<img title="Selenoid Video" src="images/screenshots/video_logintest.gif" width="250" height="153"  alt="video"> <img title="Selenoid Video" src="images/screenshots/video_sendmailtest.gif" width="250" height="153"  alt="video"> <img title="Selenoid Video" src="images/screenshots/video_titletest.gif" width="250" height="153"  alt="video">
 </p>
