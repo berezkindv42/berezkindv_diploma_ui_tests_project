@@ -110,10 +110,10 @@ public class LoginPage {
         loggedTooltip.should(exist);
     }
 
-    public LoginPage sleep(int value) {
-        Selenide.sleep(value);
-        return this;
-    }
+//    public LoginPage sleep(int value) {
+//        Selenide.sleep(value);
+//        return this;
+//    }
 
 
 }

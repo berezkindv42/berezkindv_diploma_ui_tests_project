@@ -59,9 +59,7 @@ public class UITests extends TestBase {
                 .typeTextbox()
                 .pushSendMailButton()
                 .goToSentMailTab()
-                .checkSentMail()
-                .sleep(5000);
-
+                .checkSentMail();
     }
 
     @Test
