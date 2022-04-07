@@ -37,25 +37,23 @@ public class SendMailPage {
             sentMailCheck = $x("//span[@data-thread-id and text() ='" + testMailSubject + "']");
 
 
-    @Step("Открываем почту")
-    public SendMailPage openMailPage() {
-        open(gmailPage);
-        return this;
-    }
+//    @Step("Открываем почту")
+//    public SendMailPage openMailPage() {
+//        open(gmailPage);
+//        return this;
+//    }
 
-    @Step("Нажимаем кнопку 'Войти'")
-    public SendMailPage pushLoginButton() {
-        loginButton.click();
-        return this;
-    }
+//    @Step("Нажимаем кнопку 'Войти'")
+//    public SendMailPage pushLoginButton() {
+//        loginButton.click();
+//        return this;
+//    }
 
-    @Step("Выбираем аккаунт")
-    public SendMailPage selectAccount() {
-        selectAccount.click();
-        return this;
-    }
-
-
+//    @Step("Выбираем аккаунт")
+//    public SendMailPage selectAccount() {
+//        selectAccount.click();
+//        return this;
+//    }
 
     @Step("Нажимаем кнопку 'Написать'")
     public SendMailPage pushNewMailButton() {
@@ -105,27 +103,27 @@ public class SendMailPage {
         return this;
     }
 
-    @Step("Нажимаем кнопку приложения 'Gmail'")
-    public SendMailPage pushGmailAppButton() {
-        gmailAppButton.click();
-        return this;
-    }
+//    @Step("Нажимаем кнопку приложения 'Gmail'")
+//    public SendMailPage pushGmailAppButton() {
+//        gmailAppButton.click();
+//        return this;
+//    }
 
-    @Step("Переходим во фрейм приложений")
-    public SendMailPage switchFrame() {
-        Selenide.switchTo().frame("iframe[src='https://ogs.google.com/u/0/widget/app?origin=https%3A%2F%2Fmyaccount.google.com&cn=app&pid=269&spid=192&hl=ru']");
-        return this;
-    }
+//    @Step("Переходим во фрейм приложений")
+//    public SendMailPage switchFrame() {
+//        Selenide.switchTo().frame("iframe[src='https://ogs.google.com/u/0/widget/app?origin=https%3A%2F%2Fmyaccount.google.com&cn=app&pid=269&spid=192&hl=ru']");
+//        return this;
+//    }
 
-    @Step("Открываем новую вкладку")
-    public SendMailPage switchTab() {
-        Selenide.switchTo().window(1);
-        return this;
-    }
+//    @Step("Открываем новую вкладку")
+//    public SendMailPage switchTab() {
+//        Selenide.switchTo().window(1);
+//        return this;
+//    }
 
-    public SendMailPage sleep(int value) {
-        Selenide.sleep(value);
-        return this;
-    }
+//    public SendMailPage sleep(int value) {
+//        Selenide.sleep(value);
+//        return this;
+//    }
 
 }

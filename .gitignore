@@ -27,7 +27,7 @@
 allure-results/
 #gradle/
 build/
-notifications/
+#notifications/
 bin/
 out/
 logs/

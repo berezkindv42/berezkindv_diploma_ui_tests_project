@@ -38,11 +38,11 @@ public class LoginPage {
         return this;
     }
 
-    @Step("Открываем страницу аккаунта")
-    public LoginPage openAccountPage() {
-        open(gmailAccountPage);
-        return this;
-    }
+//    @Step("Открываем страницу аккаунта")
+//    public LoginPage openAccountPage() {
+//        open(gmailAccountPage);
+//        return this;
+//    }
 
 //    @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
 //    public LoginPage openPage() {
@@ -56,17 +56,17 @@ public class LoginPage {
         return this;
     }
 
-    @Step("Нажимаем кнопку выбора языка")
-    public LoginPage pushLanguageChooseButton() {
-        languageChooseButton.click();
-        return this;
-    }
+//    @Step("Нажимаем кнопку выбора языка")
+//    public LoginPage pushLanguageChooseButton() {
+//        languageChooseButton.click();
+//        return this;
+//    }
 
-    @Step("Нажимаем кнопку выбора языка")
-    public LoginPage selectRuLanguage() {
-        languageSelect.click();
-        return this;
-    }
+//    @Step("Нажимаем кнопку выбора языка")
+//    public LoginPage selectRuLanguage() {
+//        languageSelect.click();
+//        return this;
+//    }
 
     @Step("Проверяем открытие формы ввода электронной почты")
     public LoginPage checkLoginForm() {
@@ -105,10 +105,9 @@ public class LoginPage {
     }
 
     @Step("Проверяем логин")
-    public LoginPage loggedCheck() {
+    public void loggedCheck() {
         loggedIcon.hover();
         loggedTooltip.should(exist);
-        return this;
     }
 
     public LoginPage sleep(int value) {
