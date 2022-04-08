@@ -3,8 +3,8 @@
 
 ## :pushpin: Содержание:
 
-- [Технологии и инструменты](#технологии-и-инструменты)
-- [Тест кейсы](#тест-кейсы)
+- [Технологии и инструменты](#-технологии-и-инструменты)
+- [Тест кейсы](#-тест-кейсы)
 - [Сборка в Jenkins](#jenkins-job)
 - [Запуск из терминала](#запуск-тестов-из-терминала)
 - [Allure отчет](#отчет-в-allure-report)
@@ -37,7 +37,7 @@
 - ✓ Ручной тест сохранения в черновики (Добавлен в Allure TestOps).
 - ✓ Ручной тест удаления письма (Добавлен в Allure TestOps).
 
-## <img src="images/logos/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
+## <img src="images/logos/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a>Jenkins job
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_diploma_ui_tests_project/">Сборка в Jenkins</a>
 
 Для запуска сборки нужно нажат кнопку "Собрать с параметрами":
@@ -87,7 +87,7 @@ ${TASK}
 -Dthreads=${THREADS}
 ```
 
-## <img src="images/logos/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_performance_lab_complete_project/22/allure/">Allure report</a>
+## <img src="images/logos/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a>Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_performance_lab_complete_project/22/allure/">Allure report</a>
 
 ### Основное окно
 
@@ -121,7 +121,7 @@ ${TASK}
 <img title="Allure TestOps Tests" src="images/screenshots/testops_added_manual_tests.jpg">
 </p>
 
-## <img src="images/logos/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
+## <img src="images/logos/Telegram.svg" width="25" height="25"  alt="Allure"/></a>Уведомление в Telegram при помощи бота
 По завершении всех операций телеграм бот отправит отчет со статистикой:
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/screenshots/telegram_bot.png">
@@ -129,7 +129,7 @@ ${TASK}
 
 
 
-### <img src="images/logos/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Примеры видео о прохождении тестов
+### <img src="images/logos/Selenoid.svg" width="25" height="25"  alt="Allure"/></a>Примеры видео о прохождении тестов
 
 <p align="center">
 <img title="Selenoid Video" src="images/screenshots/video_logintest.gif" width="250" height="153"  alt="video"> <img title="Selenoid Video" src="images/screenshots/video_sendmailtest.gif" width="250" height="153"  alt="video">
