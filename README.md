@@ -12,7 +12,7 @@
 - [Отчет в Telegram](#уведомление-в-telegram-при-помощи-бота)
 - [Видео примеры прохождения тестов](#примеры-видео-о-прохождении-тестов)
 
-## :rocket:Технологии и инструменты
+## :rocket: Технологии и инструменты
 
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img src="images/logos/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>
