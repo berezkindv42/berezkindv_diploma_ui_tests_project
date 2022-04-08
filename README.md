@@ -12,7 +12,7 @@
 - [Отчет в Telegram](#уведомление-в-telegram-при-помощи-бота)
 - [Видео примеры прохождения тестов](#примеры-видео-о-прохождении-тестов)
 
-## :rocket: Технологии и инструменты
+## :rocket:Технологии и инструменты
 
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img src="images/logos/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>
@@ -28,7 +28,7 @@
 <a href="https://www.jenkins.io/"><img src="images/logos/Allure_EE.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
-## :scroll: Тест кейсы
+## :scroll:Тест кейсы
 
 - ✓ Автотест на соответствие заголовка страницы.
 - ✓ Автотест входа в почту.
@@ -67,7 +67,7 @@
 - videoStorage (адрес, по которому можно получить видео)
 - threads (количество потоков)
 
-## :computer: Запуск тестов из терминала
+## :computer:Запуск тестов из терминала
 
 Локальный запуск:
 ```bash
