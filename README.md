@@ -9,7 +9,6 @@
 - [Запуск из терминала](#earth_africa-Запуск-тестов-из-терминала)
 - [Allure отчет](#earth_africa-Allure-отчет)
 - [Интеграция с Allure TestOps](#earth_africa-Интеграция-с-Allure-TestOps)
-- [Интеграция с Jira](#earth_africa-Интеграция-с-Jira)
 - [Отчет в Telegram](#earth_africa-Уведомление-в-Telegram-при-помощи-бота)
 - [Видео примеры прохождения тестов](#earth_africa-Примеры-видео-о-прохождении-тестов)
 
