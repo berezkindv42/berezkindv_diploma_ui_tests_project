@@ -101,7 +101,7 @@ ${TASK}
 <img title="Allure Tests" src="images/screenshots/allure_report_tests.png">
 </p>
 
-### Гафики
+### Графики
 
 <p align="center">
 <img title="Allure Graphics" src="images/screenshots/allure_report_graphs.png">

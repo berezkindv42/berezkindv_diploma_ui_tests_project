@@ -11,8 +11,10 @@ public interface CredentialsConfig extends Config {
 
     @Key("user.email")
     String userEmail();
+
     @Key("user.password")
     String userPassword();
+
     @Key("to.email")
     String toEmail();
 }
