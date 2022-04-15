@@ -31,7 +31,7 @@ public class LoginPage {
 
     @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
     public LoginPage openPage() {
-        open(gmailPage);
+        open("/intl/ru/gmail/about/?hl=ru");
         return this;
     }
 

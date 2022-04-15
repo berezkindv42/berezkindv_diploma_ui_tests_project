@@ -16,9 +16,7 @@ public class SendMailPage {
 
     CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
-
     private static final SelenideElement
-            loginButton = $(".header").$(byText("Войти")),
             newMailButton = $("div[class='z0']").$(byText("Написать")),
             newMailFormCheck = $("div[class='AD']"),
             toFieldInput = $("textarea[name='to']"),

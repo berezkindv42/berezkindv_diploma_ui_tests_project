@@ -14,7 +14,7 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class UITests extends TestBase {
+public class GmailTests extends TestBase {
 
     LoginPage loginPage = new LoginPage();
     SendMailPage sendMailPage = new SendMailPage();
