@@ -95,4 +95,21 @@ public class GmailTests extends TestBase {
             assertThat(consoleLogs).doesNotContain(errorText);
         });
     }
+
+    @Test
+    @Tag("ui")
+    @Owner("berezkindv")
+    @Description("Page console log should not have errors")
+    @DisplayName("Проверка лога консоли на отсутствие ошибок")
+    void negativeConsoleShouldNotHaveErrorsTest() {
+        step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'", () ->
+                open("https://www.google.com/intl/ru/gmail/about/"));
+
+        step("Лог консоли не должен содержать текст: 'SEVERE'", () -> {
+            String consoleLogs = DriverUtils.getConsoleLogs();
+            String errorText = "SEVERE";
+
+            assertThat(consoleLogs).contains(errorText);
+        });
+    }
 }
