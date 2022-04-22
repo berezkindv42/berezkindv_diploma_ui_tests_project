@@ -28,6 +28,7 @@ public class LoginPage {
             passwordInputNextButton = $("#passwordNext").$(byText("Weiter")),
             loggedIcon = $("img[class='gb_Aa gbii']"),
             loggedTooltip = $x("//div[text() = 'John Smith']");
+// дублированные строки для локального запуска
 
     @Step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'")
     public LoginPage openPage() {

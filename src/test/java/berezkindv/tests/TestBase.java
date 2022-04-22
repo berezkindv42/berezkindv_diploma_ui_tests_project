@@ -20,7 +20,7 @@ public class TestBase {
     static void setUp() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DriverSettings.configure();
-        Configuration.baseUrl = "https://www.google.com/";
+        Configuration.baseUrl = "https://www.google.com";
     }
 
     @AfterEach
