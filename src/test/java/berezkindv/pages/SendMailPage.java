@@ -1,6 +1,7 @@
 package berezkindv.pages;
 
 import berezkindv.config.CredentialsConfig;
+import berezkindv.data.TestData;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.aeonbits.owner.ConfigFactory;
@@ -24,7 +25,8 @@ public class SendMailPage {
             textboxInput = $("div[aria-label='Текст письма']"),
             sendMailButton = $("div[data-tooltip^='Отправить']"),
             sentMailButton = $("div[data-tooltip='Отправленные']"),
-            sentMailCheck = $x("//span[@data-thread-id and text() ='" + testMailSubject + "']");
+//            sentMailCheck = $x("//span[@data-thread-id and text() ='" + testMailSubject + "']");
+            sentMailCheck = $x("//span[@data-thread-id and text() ='" + mailSubject + "']");
 
     @Step("Нажимаем кнопку 'Написать'")
     public SendMailPage pushNewMailButton() {
@@ -46,13 +48,15 @@ public class SendMailPage {
 
     @Step("Заполняем поле 'Тема'")
     public SendMailPage typeSubjectField() {
-        subjectFieldInput.setValue(testMailSubject);
+//        subjectFieldInput.setValue(testMailSubject);
+        subjectFieldInput.setValue(mailSubject);
         return this;
     }
 
     @Step("Заполняем поле 'Текст письма'")
     public SendMailPage typeTextbox() {
-        textboxInput.setValue(testMailMessage);
+//        textboxInput.setValue(testMailMessage);
+        textboxInput.setValue(mailMessage);
         return this;
     }
 
