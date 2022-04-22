@@ -99,8 +99,8 @@ public class GmailTests extends TestBase {
     @Test
     @Tag("ui")
     @Owner("berezkindv")
-    @Description("Page console log should not have errors")
-    @DisplayName("Проверка лога консоли на отсутствие ошибок")
+    @Description("Page console log should not have errors, negative test")
+    @DisplayName("Проверка лога консоли на отсутствие ошибок, негативный тест")
     void negativeConsoleShouldNotHaveErrorsTest() {
         step("Открываем страницу 'https://www.google.com/intl/ru/gmail/about/'", () ->
                 open("https://www.google.com/intl/ru/gmail/about/"));
