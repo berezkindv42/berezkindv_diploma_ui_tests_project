@@ -1,4 +1,4 @@
-package berezkindv.data;
+package com.berezkindv.data;
 
 import com.github.javafaker.Faker;
 

@@ -1,6 +1,6 @@
-package berezkindv.helpers;
+package com.berezkindv.helpers;
 
-import berezkindv.config.Project;
+import com.berezkindv.config.Project;
 import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

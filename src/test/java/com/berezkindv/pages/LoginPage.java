@@ -1,11 +1,10 @@
-package berezkindv.pages;
+package com.berezkindv.pages;
 
-import berezkindv.config.CredentialsConfig;
+import com.berezkindv.config.CredentialsConfig;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.aeonbits.owner.ConfigFactory;
 
-import static berezkindv.data.TestData.*;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;

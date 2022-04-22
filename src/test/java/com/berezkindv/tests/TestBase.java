@@ -1,9 +1,9 @@
-package berezkindv.tests;
+package com.berezkindv.tests;
 
-import berezkindv.config.Project;
-import berezkindv.helpers.AllureAttachments;
-import berezkindv.helpers.DriverSettings;
-import berezkindv.helpers.DriverUtils;
+import com.berezkindv.config.Project;
+import com.berezkindv.helpers.AllureAttachments;
+import com.berezkindv.helpers.DriverSettings;
+import com.berezkindv.helpers.DriverUtils;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;

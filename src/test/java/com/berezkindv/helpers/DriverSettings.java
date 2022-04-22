@@ -1,6 +1,6 @@
-package berezkindv.helpers;
+package com.berezkindv.helpers;
 
-import berezkindv.config.Project;
+import com.berezkindv.config.Project;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;

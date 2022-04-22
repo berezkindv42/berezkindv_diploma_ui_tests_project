@@ -1,8 +1,8 @@
-package berezkindv.tests;
+package com.berezkindv.tests;
 
-import berezkindv.helpers.DriverUtils;
-import berezkindv.pages.LoginPage;
-import berezkindv.pages.SendMailPage;
+import com.berezkindv.helpers.DriverUtils;
+import com.berezkindv.pages.LoginPage;
+import com.berezkindv.pages.SendMailPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;

@@ -1,4 +1,4 @@
-package berezkindv.config;
+package com.berezkindv.config;
 
 import org.aeonbits.owner.ConfigFactory;
 

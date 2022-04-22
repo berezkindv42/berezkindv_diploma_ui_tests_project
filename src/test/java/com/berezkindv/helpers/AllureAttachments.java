@@ -1,4 +1,4 @@
-package berezkindv.helpers;
+package com.berezkindv.helpers;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
