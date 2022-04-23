@@ -1,4 +1,4 @@
-# Дипломный проект по UI тестированию для Gmail
+# Дипломный проект по автоматическому UI тестированию отправки почты в Gmail
 <a target="_blank" href="https://mail.google.com/mail">Gmail</a>
 
 ## :pushpin: Содержание:
@@ -37,6 +37,8 @@
 - ✓ Ручной тест сохранения в черновики (Добавлен в Allure TestOps).
 - ✓ Ручной тест удаления письма (Добавлен в Allure TestOps).
 
+[К содержанию](#pushpin-содержание)
+
 ## <img src="images/logos/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a>Jenkins job
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_diploma_ui_tests_project/">Сборка в Jenkins</a>
 
@@ -56,7 +58,6 @@
 </p>
 
 
-
 ### Параметры сборки в Jenkins:
 
 - browser (браузер, по умолчанию chrome)
@@ -66,6 +67,8 @@
 - remoteDriverUrl (логин, пароль и адрес удаленного сервера selenoid)
 - videoStorage (адрес, по которому можно получить видео)
 - threads (количество потоков)
+
+[К содержанию](#pushpin-содержание)
 
 ## :computer: Запуск тестов из терминала
 
@@ -87,6 +90,8 @@ ${TASK}
 -Dthreads=${THREADS}
 ```
 
+[К содержанию](#pushpin-содержание)
+
 ## <img src="images/logos/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a>Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_diploma_ui_tests_project/10/allure/">Allure report</a>
 
 ### Основное окно
@@ -107,6 +112,8 @@ ${TASK}
 <img title="Allure Graphics" src="images/screenshots/allure_report_graphs.png">
 </p>
 
+[К содержанию](#pushpin-содержание)
+
 ## <img src="images/logos/Allure_EE.svg" width="25" height="25"  alt="Allure"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/launch/12018">Allure TestOps</a>
 
 ### Дашборд
@@ -121,16 +128,20 @@ ${TASK}
 <img title="Allure TestOps Tests" src="images/screenshots/testops_added_manual_tests.jpg">
 </p>
 
+[К содержанию](#pushpin-содержание)
+
 ## <img src="images/logos/Telegram.svg" width="25" height="25"  alt="Allure"/></a>Уведомление в Telegram при помощи бота
 По завершении всех операций телеграм бот отправит отчет со статистикой:
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/screenshots/telegram_bot.png">
 </p>
 
-
+[К содержанию](#pushpin-содержание)
 
 ### <img src="images/logos/Selenoid.svg" width="25" height="25"  alt="Allure"/></a>Примеры видео о прохождении тестов
 
 <p align="center">
 <img title="Selenoid Video" src="images/screenshots/video_logintest.gif" width="250" height="153"  alt="video"> <img title="Selenoid Video" src="images/screenshots/video_sendmailtest.gif" width="250" height="153"  alt="video">
 </p>
+
+[К содержанию](#pushpin-содержание)
