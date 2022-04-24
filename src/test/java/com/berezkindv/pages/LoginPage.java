@@ -15,13 +15,13 @@ public class LoginPage {
 
     private static final SelenideElement
             loginButton = $(".header").$(byText("Войти")),
-//            loginFormCheck = $("div[id='view_container']").$(byText("Забыли адрес электронной почты?")),
-            loginFormCheck = $("div[id='view_container']").$(byText("E-Mail-Adresse vergessen?")),
+//            loginFormCheck = $("div#view_container").$(byText("Забыли адрес электронной почты?")),
+            loginFormCheck = $("div#view_container").$(byText("E-Mail-Adresse vergessen?")),
             emailInput = $("#identifierId"),
 //            emailInputNextButton = $("#identifierNext").$(byText("Далее")),
             emailInputNextButton = $("#identifierNext").$(byText("Weiter")),
-//            passwordFormCheck = $("div[id='view_container']").$(byText("Забыли пароль?")),
-            passwordFormCheck = $("div[id='view_container']").$(byText("Passwort anzeigen")),
+//            passwordFormCheck = $("div#view_container").$(byText("Забыли пароль?")),
+            passwordFormCheck = $("div#view_container").$(byText("Passwort anzeigen")),
             passwordInput = $("input[type='password']"),
 //            passwordInputNextButton = $("#passwordNext").$(byText("Далее")),
             passwordInputNextButton = $("#passwordNext").$(byText("Weiter")),
