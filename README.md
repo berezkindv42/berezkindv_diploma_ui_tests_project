@@ -1,5 +1,5 @@
 # Дипломный проект по автоматическому UI тестированию отправки почты в Gmail
-<a target="_blank" href="https://mail.google.com/mail">Gmail</a>
+### <a target="_blank" href="https://mail.google.com/mail">Gmail</a>
 
 ## :pushpin: Содержание:
 
