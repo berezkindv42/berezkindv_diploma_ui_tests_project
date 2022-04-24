@@ -72,7 +72,7 @@ gradle clean ui_tests -Dbrowser=chrome -DbrowserVersion=100.0 -DbrowserSize=1920
 ## <img src="images/logos/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a>Jenkins job
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_diploma_ui_tests_project/">Сборка в Jenkins</a>
 
-####Параметры запуска в Jenkins:
+#### Параметры запуска в Jenkins:
 ```bash
 clean
 ${TASK}
@@ -96,7 +96,7 @@ ${TASK}
 - ```REMOTE_DRIVER_URL``` - url удаленного сервера selenoid
 - ```THREADS``` - Количество потоков
 
-####Инструкция по запуску сборки в Jenkins:
+#### Инструкция по запуску сборки в Jenkins:
 
 Для запуска сборки нужно нажат кнопку "Собрать с параметрами":
 <p align="center">
