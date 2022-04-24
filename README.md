@@ -113,7 +113,6 @@ ${TASK}
 <a href="https://jenkins.autotests.cloud/job/berezkindv_diploma_ui_tests_project/"><img src="images/screenshots/jenkins_job_notifications.jpg" alt="Jenkins"/></a>
 </p>
 
-
 [К содержанию](#pushpin-содержание)
 
 ## <img src="images/logos/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a>Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/berezkindv_diploma_ui_tests_project/10/allure/">Allure report</a>
